@@ -1,0 +1,15 @@
+Preamble
+Author: Guy Hughes
+Source Files: hello.c divisor.c
+Purpose: Tutorial 1
+
+
+Compilation Command
+gcc -o divisor -Wall -Wextra -Wpedantic -Wshadow -Wstrict-overflow -fno-strict-aliasing -O2 -Os -std=c99 divisor.c
+
+Operating Instructions
+1. Run the compilation command stated above
+2. Execute the binary `./t0a`
+3. Type an integer followed by enter
+4. Repeat #3.
+5. Observe the output, which should be the greatest common divsor of the integers you entered in #3 and #4 obtained by the Eulcidiean algorithm.
