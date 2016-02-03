@@ -1,2 +1,4 @@
+*
+!*.c
 .vagrant
 *.ova
