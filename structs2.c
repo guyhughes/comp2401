@@ -30,9 +30,9 @@ initstudent(char *f, char *l, int a, char *n, float g, student_t *stu)
 }
 
 void
-printstudent(student_t stu)
+printstudent(const student_t* stu)
 {
-  printf("%s %s #%s\nAge %d\tGPA %f\n",stu.basicInfo.first,stu.basicInfo.last,stu.studentnumber,stu.basicInfo.age,stu.gpa);
+  printf("%s %s #%s\nAge %d\tGPA %f\n",stu->basicInfo.first,stu->basicInfo.last,stu->studentnumber,stu->basicInfo.age,stu->gpa);
 }
 
 int
@@ -46,7 +46,7 @@ main()
   initstudent("Fort","Knox",25,"10037196",3.1,&stud[3]);
   initstudent("Hive","Mind",26,"10037195",3.0,&stud[4]);
   for(i=0;i<5;++i){
-    printstudent(stud[i]);
+    printstudent(&stud[i]);
     puts("");
   }
 }
