@@ -112,3 +112,28 @@ bitwise operations
       - (if twos complement, adding sign bit to beginning)
       - (if otherwise, adding zeros to begninng )
                               
+2016-02-04
+===================================
+
+    THESE ARE THE ONLY MEMORY ALLOCATION FUNCTIONS YOU MAY USE FOR THIS COURSE. OR ELSE I WILL CRY. IAMPROF.
+
+malloc 
+-------------
+
+calloc
+-------------
+- clears memory first, allocs a number of elements
+- mallocs
+
+void 
+-------------
+- both malloc and calloc return the pointer to void
+- void means: no datatype || any data type
+
+typecasting
+------------
+- outside scope of course
+- usually used on pointers
+- can be used on non-pointer vars
+
+
