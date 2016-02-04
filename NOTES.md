@@ -119,11 +119,16 @@ bitwise operations
 
 malloc 
 -------------
+- `void \*malloc(size_t size)` where size is a number of bytes (duh)
+- returns the start memory address reserved
+- if you don't store this pointer, how in the hell ya gonna free the memory, honey?
+- in stdlib.h
 
 calloc
 -------------
 - clears memory first, allocs a number of elements
 - mallocs
+- in stdlib.h
 
 void 
 -------------
