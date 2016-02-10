@@ -1,5 +1,10 @@
 *
-!*.py
-!*.c
 .vagrant
 *.ova
+!Makefile
+!*.py
+!*.c
+!*.bash
+!*.h
+!*.cc
+!*.md
