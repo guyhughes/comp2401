@@ -246,5 +246,37 @@ process
 - process id (PID)
 - parent process id - PID of process that started this process
 - usually managed by OS; can be: shell, program
--
+- `ps -ef`
 
+forking
+--------------------------------------------------
+- clone of itself
+- new process is the child
+- child gets an instantaneous copy of the parent's address space 
+
+exec
+--------------------------------------------------
+- morphing itself
+- char *args = {processname,arg1,arg2};
+- execvp(buffer, args); 
+
+fork bomb
+--------------------------------------------------
+- OS keeps process table
+- all tables have finite capacity
+
+wait()
+--------------------------------------------------
+- wait until any of the children terminator
+- or wait until a specific process terminates
+
+system()
+--------------------------------------------------
+- fork-exec the stupid way
+
+signals
+--------------------------------------------------
+- just an integer
+- USR1, USR2
+- typically used for errors
+- procesess
