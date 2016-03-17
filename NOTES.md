@@ -60,7 +60,8 @@ s. 2.1.1 Bit models
     - octal base 8
     - hexadecimal base 16
 
-- magnitude-only bit model
+magnitude-only bit model
+--------------------------------------------------
     - unsigned non-negative whole numbers
     - each bit represents non-negative integer power of 2
     - 8 bits → 2^8 ⇒ 256 max val
@@ -72,7 +73,8 @@ s. 2.1.1 Bit models
 
 - in c **{int, char} is always signed int**
 
-- two's complement
+two's complement
+--------------------------------------------------
     - positive integers and zero - use magnitude-only bit model
     - negative integers: write bits for positive number; invert; add 1
 
@@ -84,6 +86,7 @@ s. 2.1.1 Bit models
 
 - floating point:
     - format: +/- 1.f x 2^e
+
 
 
 2016-01-21
@@ -111,6 +114,8 @@ bitwise operations
     - `>> 2` right shift by 2
       - (if twos complement, adding sign bit to beginning)
       - (if otherwise, adding zeros to begninng )
+
+
 
 2016-02-04
 ===================================
@@ -140,6 +145,8 @@ typecasting
 - outside scope of course
 - usually used on pointers
 - can be used on non-pointer vars
+
+
 
 2016-03-15
 ========================================
@@ -175,15 +182,17 @@ static linking v. dynamic linking
 - dynamic - default - runtime as needed - smaller exe but slower execution time
 - static - library code is copied into exe - larger exe but faster exe time
 
-2016-03-17
+
+
+2016-03-17 Concurrent
 ===============================================
 
-Concurrent Computing today
-- processes v threads
 
 concurrency :: doing > 1 thing at a time
+--------------------------------------------------
 
 concurrent computing ::
+--------------------------------------------------
 - a program with more than one control flow
 - a large system can be: 
   - multithreaded
@@ -191,10 +200,12 @@ concurrent computing ::
   - distributed
 
 thread :: one control flow
+--------------------------------------------------
 - !== processes
 - share resources with process tree
 
 distributed system :: 
+--------------------------------------------------
 - execution over multiple physical host
 - each host has different resources (fs, processor...)
 - hosts msust be networked togeter in order to commnicate
@@ -203,4 +214,37 @@ distributed system ::
   - users are in different physical locations
   - server hosts are in different physical locatoins
   - single host has insufficient resources/processor power
+
+
+process :: running exe
+--------------------------------------------------
+
+multiprocess ::
+--------------------------------------------------
+- can be DIFFERENT exe *OR* MULTIPLE instance of same exe
+- why?
+  - system has different tasks to perform
+  - tasks are independent
+  - tasks use different resources
+
+multithreaded ::
+--------------------------------------------------
+- process with multiple control flows
+- share the process (virtual memeory, address space, resources)
+- different threads may need to synchronize
+- why?
+  - different things to do within a process
+  - tasks ~dependent upon each other
+  - example: one thread blocks and waits for user input
+
+process management ::
+--------------------------------------------------
+- launching, killing, signals
+
+process
+--------------------------------------------------
+- process id (PID)
+- parent process id - PID of process that started this process
+- usually managed by OS; can be: shell, program
+-
 
