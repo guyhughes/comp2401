@@ -1,7 +1,7 @@
 # CFLAGS=-Wall -Wextra -Wpedantic -Werror -Wshadow -Wstrict-overflow -fno-strict-aliasing -std=gnu11 -g
 
 # -Werror is annoying me
-CFLAGS=-Wall -Wextra -Wpedantic -Wshadow -Wstrict-overflow -fno-strict-aliasing -std=gnu11 -g
+CFLAGS=-Wall -Wextra -Wpedantic -Wshadow -Wstrict-overflow -fno-strict-aliasing -std=gnu11 -g -pipe -O2
 
 default:
 clean:

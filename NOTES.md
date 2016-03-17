@@ -17,7 +17,7 @@ operator characteristics
  - arity (unary,binary, ternary)
  - precedence
  - associativity: order in which orperators of the same predecence execute
-    
+
 expressions, statements, blocks
 ------------
  - expression: sequence of operators that resolves to a single value
@@ -55,7 +55,7 @@ s. 2.1.1 Bit models
 - byte: 8 consecutive bits
 - nibble: 4 consecutive bits; maps to one hexadecimal digit
 
-- base conversion: 
+- base conversion:
     - binary base 2
     - octal base 8
     - hexadecimal base 16
@@ -63,7 +63,7 @@ s. 2.1.1 Bit models
 - magnitude-only bit model
     - unsigned non-negative whole numbers
     - each bit represents non-negative integer power of 2
-    - 8 bits → 2^8 ⇒ 256 max val 
+    - 8 bits → 2^8 ⇒ 256 max val
     - least significant bits → lowest powers of 2 ("lower order bits")
     - most significant bits → highest powers of 2 ("higher order bits")
     1. unsigned char is 1 byte
@@ -84,7 +84,7 @@ s. 2.1.1 Bit models
 
 - floating point:
     - format: +/- 1.f x 2^e
-        
+
 
 2016-01-21
 ===============================
@@ -94,7 +94,7 @@ s. 2.1.1 Bit models
 
 floating point
 ----------------------
-float 
+float
 - 4 bytes
 
 double
@@ -108,16 +108,16 @@ bitwise operations
 - can use bitwise ops on literals and vars
 - bit-shift operators are not 'circular'
     - `<< 3` left shift by 3 (adding zeros to end)
-    - `>> 2` right shift by 2 
+    - `>> 2` right shift by 2
       - (if twos complement, adding sign bit to beginning)
       - (if otherwise, adding zeros to begninng )
-                              
+
 2016-02-04
 ===================================
 
     THESE ARE THE ONLY MEMORY ALLOCATION FUNCTIONS YOU MAY USE FOR THIS COURSE. OR ELSE I WILL CRY. IAMPROF.
 
-malloc 
+malloc
 -------------
 - `void \*malloc(size_t size)` where size is a number of bytes (duh)
 - returns the start memory address reserved
@@ -130,7 +130,7 @@ calloc
 - mallocs
 - in stdlib.h
 
-void 
+void
 -------------
 - both malloc and calloc return the pointer to void
 - void means: no datatype || any data type
@@ -141,4 +141,66 @@ typecasting
 - usually used on pointers
 - can be used on non-pointer vars
 
+2016-03-15
+========================================
+
+Header files
+-------------------
+- never contains function implementations
+- never includes .c files
+
+gcc
+------------------
+- preprocessor
+- compile
+- link
+
+- gcc -c : we will use -c from now on
+- gcc *.o -o bin
+
+why separate compiling and linking?
+-------------------------------------
+- different programming languages
+- compilation may be slow
+
+
+how to use a library?
+--------------------------
+1. include the header file
+2. link in the object file
+0. remember: libc.a is always linked in by default
+
+static linking v. dynamic linking
+-----------------------------------
+- dynamic - default - runtime as needed - smaller exe but slower execution time
+- static - library code is copied into exe - larger exe but faster exe time
+
+2016-03-17
+===============================================
+
+Concurrent Computing today
+- processes v threads
+
+concurrency :: doing > 1 thing at a time
+
+concurrent computing ::
+- a program with more than one control flow
+- a large system can be: 
+  - multithreaded
+  - multiprocess
+  - distributed
+
+thread :: one control flow
+- !== processes
+- share resources with process tree
+
+distributed system :: 
+- execution over multiple physical host
+- each host has different resources (fs, processor...)
+- hosts msust be networked togeter in order to commnicate
+  - either by intranet or internet
+- why?
+  - users are in different physical locations
+  - server hosts are in different physical locatoins
+  - single host has insufficient resources/processor power
 
