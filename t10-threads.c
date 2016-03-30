@@ -33,7 +33,7 @@ void *prime(void *n) {
   long int num = *((long int *)n);
   int max = (int) sqrt(num);
   for (i = 2; i <= max; i++) {
-    /* usleep(1000); */
+    usleep(1000);
     if (num % i == 0) {
       printf("%ld is not prime\n", num);
       return;
