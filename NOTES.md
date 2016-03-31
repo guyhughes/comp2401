@@ -257,7 +257,7 @@ forking
 exec
 --------------------------------------------------
 - morphing itself
-- char *args = {processname,arg1,arg2};
+- char \*args = {processname,arg1,arg2};
 - execvp(buffer, args); 
 
 fork bomb
@@ -280,3 +280,55 @@ signals
 - USR1, USR2
 - typically used for errors
 - procesess
+
+2016-03-31 Code Organization
+========================================
+types of storage classes
+--------------------------------------------------
+- auto(matic): stored on stack, incl. params, local vars
+- static: retains value until program termination, only visible in block
+- extern: global and declared in another file
+- register: stored in register rather than in memory; may be ignored
+  - good compiler will perform this optimization anyway
+- mutable: allows parent's const status to change (i.e. struct/c++ class)
+- see http://www.csegeek.com/csegeek/view/tutorials/cpp_lang/cpp_storage_class.php
+
+
+block scope
+--------------------------------------------------
+- automatic variable disappear at the closing brace
+
+file scope === "global scope"
+--------------------------------------------------
+- != global memory
+
+function parameter scope
+--------------------------------------------------
+- a paramter name specificed within a function prototype is useable only in that prototype
+- the name is not binding wihtin the implementation of hte function
+
+function scope
+--------------------------------------------------
+- labels! 
+- do not use these unless you're forced to and you want Christine to Christine you!
+
+
+2016-03-31 Libraries
+==================================================
+what is a library? (this is a topic? are you kidding me?)
+--------------------------------------------------
+- (sometimes I really hope some lecturers would google what their own students post about them.)
+- (you know, since some lecturers opt for course evaluation sheets that have no space to write comments.)
+- (geez, wonder who I'm talking about.)
+- (honestly, if you're an employer or HR person for a company that I actually want to work for and you think this is unprofessional, send me a PGP-signed email and tell me how stupid i'm being.)
+- (bet you a drink that that email will never come.)
+- (anyway, all of that to say, these notes are not comprehensive for this course.)
+- libraries are in `/usr/include` - duh. honestly this is first-year/highschool material. what is this curriculum?
+- Hot tip from the prof. Don't try to grep through `*.o` in `/usr/lib` it's object code. yawn. why am i here?
+
+how do i use a library? (most first year material)
+--------------------------------------------------
+- include the header files
+    - specify additonal location with `gcc -I`
+- linking `-lpthread -lm`
+    - specify additional location with `gcc -L`
