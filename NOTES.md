@@ -332,3 +332,18 @@ how do i use a library? (most first year material)
     - specify additonal location with `gcc -I`
 - linking `-lpthread -lm`
     - specify additional location with `gcc -L`
+
+how to make a library
+--------------------------------------------------
+- create object files, package them
+- supply header `*.h` files and archive `*.a` files to 
+- where is my `libc.a`? → this is cool `gcc --print-file-name=libc.a` 
+- include a library → `#include <yomammagotsalib.h>`
+
+2016-03-31 Shell Scripts
+==================================================
+- ( really? can i just get a 90% on the exam for writing every answer as a portable sh script without bashisms? )
+- ( cause he's got a big ego. he talks like dis cuz he can back it up. )
+- ( who needs twitter when you can read my course notes. )
+- ( My dream is that we would cover POSIX-defined constructs instead of backticks. )
+- not on the exam -_-
