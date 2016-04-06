@@ -1,13 +1,20 @@
 Hey fam
 ==================================================
 
+Where's your notes? I'm in a rush.
+--------------------------------------------------
+Slow down, clown.
+
+See [NOTES.md](https://github.com/guyhughes/comp2401/blob/master/NOTES.md)
+
+
 Contributing
 --------------------------------------------------
 
 - Pull requests accepted. Whining without submititng a pull request is not permitted.
 
 
-LICENCE
+Licence
 --------------------------------------------------
 Copyleft (c) 2016 
 
