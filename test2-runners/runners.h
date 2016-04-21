@@ -25,7 +25,9 @@ struct List {
 
 /* runners.c */
 void menu(ListType *l);
-void addRunner(RunnerType *r, ListType *l);
 void list_print(ListType *l);
 RunnerType *runner_init(void);
 void list_init(ListType **l);
+
+/* implemented in two places */
+void addRunner(RunnerType *r, ListType *l);

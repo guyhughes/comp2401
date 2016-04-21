@@ -12,7 +12,8 @@ Node	runners.h	/^struct Node {$/;"	s
 NodeType	runners.h	/^typedef struct Node NodeType;$/;"	t	typeref:struct:Node
 Runner	runners.h	/^struct Runner{$/;"	s
 RunnerType	runners.h	/^typedef struct Runner RunnerType;$/;"	t	typeref:struct:Runner
-addRunner	runners.c	/^void addRunner(RunnerType *r, ListType *l)$/;"	f
+addRunner	addRunner-doublepointer-method.c	/^void addRunner(RunnerType *r, ListType *l)$/;"	f
+addRunner	addRunner-simple-method.c	/^void addRunner(RunnerType *r, ListType *l)$/;"	f
 bidNumber	runners.h	/^  int  bidNumber;$/;"	m	struct:Runner
 data	runners.h	/^  RunnerType *data;$/;"	m	struct:Node
 finishTime	runners.h	/^  int  finishTime;$/;"	m	struct:Runner
