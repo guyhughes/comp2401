@@ -170,6 +170,9 @@ why separate compiling and linking?
 - different programming languages
 - compilation may be slow
 
+For the confused: What the hello?
+----------------------------------------
+    source → compiler → object files → linking → binary executable 
 
 how to use a library?
 --------------------------
