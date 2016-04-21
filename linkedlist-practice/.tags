@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CFLAGS	Makefile	/^CFLAGS := -Wall -Wextra -Wpedantic -Wshadow -Wstrict-overflow$/;"	m
+List	runners.h	/^struct List {$/;"	s
+ListType	runners.h	/^typedef struct List ListType;$/;"	t	typeref:struct:List
+MAX_STR	runners.h	6;"	d
+Node	runners.h	/^struct Node {$/;"	s
+NodeType	runners.h	/^typedef struct Node NodeType;$/;"	t	typeref:struct:Node
+Runner	runners.h	/^struct Runner{$/;"	s
+RunnerType	runners.h	/^typedef struct Runner RunnerType;$/;"	t	typeref:struct:Runner
+addRunner	runners.c	/^void addRunner(RunnerType *r, ListType *l)$/;"	f
+bidNumber	runners.h	/^  int  bidNumber;$/;"	m	struct:Runner
+data	runners.h	/^  RunnerType *data;$/;"	m	struct:Node
+finishTime	runners.h	/^  int  finishTime;$/;"	m	struct:Runner
+head	runners.h	/^  NodeType *head;$/;"	m	struct:List
+list_init	runners.c	/^void list_init(ListType **l)$/;"	f
+list_print	runners.c	/^void list_print(ListType *l){$/;"	f
+main	runners.c	/^int main(int argc, char** argv, char** envp)$/;"	f
+menu	runners.c	/^void menu(ListType *l)$/;"	f
+name	runners.h	/^  char name[MAX_STR];$/;"	m	struct:Runner
+next	runners.h	/^  NodeType   *next, *prev;$/;"	m	struct:Node
+prev	runners.h	/^  NodeType   *next, *prev;$/;"	m	struct:Node
+runner_init	runners.c	/^RunnerType* runner_init(){$/;"	f
